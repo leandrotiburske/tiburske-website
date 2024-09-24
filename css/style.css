@@ -1,0 +1,113 @@
+/* Header section */
+
+#header-background {
+    background-color: #1c59c2;
+}
+
+.nav-link {
+    color: white;
+    font-family: "Inter";
+    padding-left: 4cap;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    --bs-nav-link-hover-color: #DB9F58;
+}
+
+.social-media {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+
+#linkedin {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Home section */ 
+
+#home-background {
+    position: relative;
+    background-color: #1c59c2;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#computer-background {
+    opacity: 0.5;
+    width: 100%;
+    object-fit: cover; 
+}
+
+#profile-pic {
+    border-radius: 50%;
+    height: 30vh;
+    position: absolute;
+    top: 25vh;
+}
+
+#home-bottom {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+h1 {
+    align-self: center;
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+/*  About  */
+
+.about-background {
+    width: 65%;
+}
+
+#about-title {
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05rem;
+    color: #1c59c2;
+    margin-bottom: 3rem;
+    margin-top: 150px;
+}
+
+h3 {
+    font-family: "Inter";
+    font-weight:normal;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05rem;
+    line-height: 2.7rem;
+}
+
+h3 > span {
+    font-weight: bold;
+    color: #DB9F58;
+}
+
+
+#boat-picture {
+    border-radius: 8%;
+    float: right;
+    margin-left: 2cap;
+    margin-bottom: 150px;
+}
+
+
+/*  Footer  */
+
+.footer-background {
+    width: 65%;
+    clear: right;
+}
