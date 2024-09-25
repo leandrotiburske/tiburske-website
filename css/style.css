@@ -168,7 +168,7 @@ body {
 }
 
 h1 {
-  align-self: center;
+  text-align: center;
   font-family: "Inter";
   font-weight: bolder;
   font-size: 5rem;
@@ -420,7 +420,7 @@ h5>a {
 }
 
 .repo>img {
-  width: 30vw;
+  width: 25vw;
 }
 
 .open-on-github>a {
@@ -482,7 +482,8 @@ h5>a {
 
   .contact {
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
   }
 
