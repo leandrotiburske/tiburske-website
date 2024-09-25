@@ -18,29 +18,38 @@
 <body>
     
     
-    <section id="header">
-        <div class="container-fluid fixed-top align-items-center" id="header-background">
+    <section id="header" class="fixed-top">
 
-                <header class="nav-bar d-flex justify-content-center py-3">
-                  <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#Experience" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#Portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
-                  </ul>
-
-                  <div class="nav-bar d-flex social-media">
-
-                    <a href="https://github.com/leandrotiburske" target="_blank"><img src="./img/github.svg" height="30" id="github"></a>
-                    <a href="https://www.linkedin.com/in/leandro-tiburske-a323b61b2/" target="_blank"><img src="./img/linkedin.svg" height="30" id="linkedin"></a>
-  
-                  </div>
-                
-                </header>
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
         </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Experience">Experience</a>
+          <a href="#Education">Education</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Contact">Contact</a>
+        </div>
+
+        <div class="nav-bar d-flex social-media">
+
+          <a href="https://github.com/leandrotiburske" target="_blank"><img src="./img/github.svg" height="30" id="github"></a>
+          <a href="https://www.linkedin.com/in/leandro-tiburske-a323b61b2/" target="_blank"><img src="./img/linkedin.svg" height="30" id="linkedin"></a>
+  
+        </div>
+
+      </div>
 
     </section>
 
@@ -106,7 +115,7 @@
 
     </section>    
 
-    <section id="Experience">
+    <section id="Experience" style="clear: right;">
 
       <div class="container experience-background">
 
@@ -118,11 +127,81 @@
               <ul class="timeline-with-icons">
                 <li class="timeline-item mb-5">
                   <span class="timeline-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="black" class="bi bi-cpu-fill" viewBox="0 0 16 16">
+                      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                      <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5"/>
+                    </svg>                  
+                  </span>
+                
+                  <h5 class="role fw-bold"><span>Bioinformatics Analyst</span> - <a target="_blank" href="https://biotrop.com/">BIOTROP</a></h5>
+                  <p class="text-muted mb-2 fw-bold">April 2024 - Present</p>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                    necessitatibus adipisci, ad alias, voluptate pariatur officia
+                    repellendus repellat inventore fugit perferendis totam dolor
+                    voluptas et corrupti distinctio maxime corporis optio?
+                  </p>
+                </li>
+              
+                <li class="timeline-item mb-5">
+                
+                  <span class="timeline-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="black" class="bi bi-cpu-fill" viewBox="0 0 16 16">
+                      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                      <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5"/>
+                    </svg>                        </span>
+                  <h5 class="role fw-bold"><span>Research Intern</span> - <a target="_blank" href="https://liu.se/en">Linköping University</a></h5>
+                  <p class="text-muted mb-2 fw-bold">August 2023 - November 2023</p>
+                  <p class="text-muted">
+                    Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
+                    aliquet laoreet sapien, eget pulvinar lectus maximus vel.
+                    Phasellus suscipit porta mattis.
+                  </p>
+                </li>
+              
+                <li class="timeline-item mb-5">
+                
+                  <span class="timeline-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="black" class="bi bi-cpu-fill" viewBox="0 0 16 16">
+                      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                      <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5"/>
+                    </svg>                        </span>
+                  <h5 class="role fw-bold"> <span>Undergraduate Researcher</span> - <a target="_blank" href="https://www.einstein.br/en/Pages/Home.aspx">Albert Einstein Education and Research Center</a></h5>
+                  <p class="text-muted mb-2 fw-bold">September 2022 - March 2024</p>
+                  <p class="text-muted">
+                    Orci varius natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Nulla ullamcorper arcu lacus, maximus
+                    facilisis erat pellentesque nec. Duis et dui maximus dui aliquam
+                    convallis. Quisque consectetur purus erat, et ullamcorper sapien
+                    tincidunt vitae.
+                  </p>
+                </li>
+            
+
+      </div>
+        
+              </section>
+
+
+    </section>
+
+    <section id="Education">
+
+      <div class="container experience-background">
+
+        <hr>
+  
+        <h2 id="portfolio-title">Education</h2>
+      
+            <section class="py-5">
+              <ul class="timeline-with-icons">
+                <li class="timeline-item mb-5">
+                  <span class="timeline-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 0c17.7 0 32 14.3 32 32c0 59.8-30.3 107.5-69.4 146.6c-28 28-62.5 53.5-97.3 77.4l-2.5 1.7c-11.9 8.1-23.8 16.1-35.5 23.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0l-1.6 1c-6 4-11.9 7.9-17.8 11.9c-20.9 14-40.8 27.7-59.3 41.5l118.5 0c-9.8-7.4-20.1-14.7-30.7-22.1l7-4.7 3-2c15.1-10.1 30.9-20.6 46.7-31.6c25 18.1 48.9 37.3 69.4 57.7C417.7 372.5 448 420.2 448 480c0 17.7-14.3 32-32 32s-32-14.3-32-32L64 480c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-59.8 30.3-107.5 69.4-146.6c28-28 62.5-53.5 97.3-77.4c-34.8-23.9-69.3-49.3-97.3-77.4C30.3 139.5 0 91.8 0 32C0 14.3 14.3 0 32 0S64 14.3 64 32l320 0c0-17.7 14.3-32 32-32zM338.6 384l-229.2 0c-10.1 10.6-18.6 21.3-25.5 32l280.2 0c-6.8-10.7-15.3-21.4-25.5-32zM109.4 128l229.2 0c10.1-10.7 18.6-21.3 25.5-32L83.9 96c6.8 10.7 15.3 21.3 25.5 32zm55.4 48c18.4 13.8 38.4 27.5 59.3 41.5c20.9-14 40.8-27.7 59.3-41.5l-118.5 0z"/></svg>
                   </span>
                 
-                  <h5 class="role fw-bold">Bioinformatics Analyst - <a target="_blank" href="https://biotrop.com/">BIOTROP</a></h5>
-                  <p class="text-muted mb-2 fw-bold">April 2024 - Present</p>
+                  <h5 class="role fw-bold">MBA in <span> Software Engineering</span> - University of São Paulo</h5>
+                  <p class="text-muted mb-2 fw-bold">October 2024 - Present</p>
                   <p class="text-muted">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
                     necessitatibus adipisci, ad alias, voluptate pariatur officia
@@ -136,8 +215,8 @@
                   <span class="timeline-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 0c17.7 0 32 14.3 32 32c0 59.8-30.3 107.5-69.4 146.6c-28 28-62.5 53.5-97.3 77.4l-2.5 1.7c-11.9 8.1-23.8 16.1-35.5 23.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0l-1.6 1c-6 4-11.9 7.9-17.8 11.9c-20.9 14-40.8 27.7-59.3 41.5l118.5 0c-9.8-7.4-20.1-14.7-30.7-22.1l7-4.7 3-2c15.1-10.1 30.9-20.6 46.7-31.6c25 18.1 48.9 37.3 69.4 57.7C417.7 372.5 448 420.2 448 480c0 17.7-14.3 32-32 32s-32-14.3-32-32L64 480c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-59.8 30.3-107.5 69.4-146.6c28-28 62.5-53.5 97.3-77.4c-34.8-23.9-69.3-49.3-97.3-77.4C30.3 139.5 0 91.8 0 32C0 14.3 14.3 0 32 0S64 14.3 64 32l320 0c0-17.7 14.3-32 32-32zM338.6 384l-229.2 0c-10.1 10.6-18.6 21.3-25.5 32l280.2 0c-6.8-10.7-15.3-21.4-25.5-32zM109.4 128l229.2 0c10.1-10.7 18.6-21.3 25.5-32L83.9 96c6.8 10.7 15.3 21.3 25.5 32zm55.4 48c18.4 13.8 38.4 27.5 59.3 41.5c20.9-14 40.8-27.7 59.3-41.5l-118.5 0z"/></svg>
                   </span>
-                  <h5 class="role fw-bold">First customer</h5>
-                  <p class="text-muted mb-2 fw-bold">19 March 2020</p>
+                  <h5 class="role fw-bold">BSc in <span>Biomedical Sciences</span> - University of São Paulo</h5>
+                  <p class="text-muted mb-2 fw-bold">January 2020 - March 2024</p>
                   <p class="text-muted">
                     Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
                     aliquet laoreet sapien, eget pulvinar lectus maximus vel.
@@ -145,36 +224,145 @@
                   </p>
                 </li>
               
-                <li class="timeline-item mb-5">
-                
-                  <span class="timeline-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 0c17.7 0 32 14.3 32 32c0 59.8-30.3 107.5-69.4 146.6c-28 28-62.5 53.5-97.3 77.4l-2.5 1.7c-11.9 8.1-23.8 16.1-35.5 23.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0l-1.6 1c-6 4-11.9 7.9-17.8 11.9c-20.9 14-40.8 27.7-59.3 41.5l118.5 0c-9.8-7.4-20.1-14.7-30.7-22.1l7-4.7 3-2c15.1-10.1 30.9-20.6 46.7-31.6c25 18.1 48.9 37.3 69.4 57.7C417.7 372.5 448 420.2 448 480c0 17.7-14.3 32-32 32s-32-14.3-32-32L64 480c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-59.8 30.3-107.5 69.4-146.6c28-28 62.5-53.5 97.3-77.4c-34.8-23.9-69.3-49.3-97.3-77.4C30.3 139.5 0 91.8 0 32C0 14.3 14.3 0 32 0S64 14.3 64 32l320 0c0-17.7 14.3-32 32-32zM338.6 384l-229.2 0c-10.1 10.6-18.6 21.3-25.5 32l280.2 0c-6.8-10.7-15.3-21.4-25.5-32zM109.4 128l229.2 0c10.1-10.7 18.6-21.3 25.5-32L83.9 96c6.8 10.7 15.3 21.3 25.5 32zm55.4 48c18.4 13.8 38.4 27.5 59.3 41.5c20.9-14 40.8-27.7 59.3-41.5l-118.5 0z"/></svg>
-                  </span>
-                  <h5 class="role fw-bold">Our team exceeds 10 people</h5>
-                  <p class="text-muted mb-2 fw-bold">24 June 2020</p>
-                  <p class="text-muted">
-                    Orci varius natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. Nulla ullamcorper arcu lacus, maximus
-                    facilisis erat pellentesque nec. Duis et dui maximus dui aliquam
-                    convallis. Quisque consectetur purus erat, et ullamcorper sapien
-                    tincidunt vitae.
-                  </p>
-                </li>
+
             
 
       </div>
         
-      </section>
-
-
-    </section>
-
-    <section id="Education">
+              </section>
 
       
     </section>
 
     <section id="Skills">
+
+      <div class="container skills-background">
+
+        <hr>
+
+        <h2 id="skills-title">Skills</h2>
+
+        <div class="container skills-list">
+
+          <hr>
+
+          <h3>Programming languages</h3>
+
+          <div id="programming-languages" class="skill-section">
+
+            <div>
+              <img src="./img/Python-logo-notext.svg.png">
+              <p>Python</p>
+            </div>
+
+            <div>
+              <img src="./img/R_logo.svg.png">
+              <p>R</p>
+            </div>
+
+            <div>
+              <img src="./img/Bash_Logo_black_and_white_icon_only.svg.png">
+              <p>Bash</p>
+            </div>
+
+            <div>
+              <img src="./img/rust.png">
+              <p>Rust</p>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Workflow orchestration</h3>
+
+          <div id="pipeline-orchestration" class="skill-section">
+            
+            <div>
+              <img src="./img/nflogo.png">
+              <p>Nextflow</p>
+            </div>
+
+          </div>
+
+          <!--
+          <hr>
+
+          <h3>NGS data</h3>
+
+          <div id="ngs-data" class="skill-section">
+
+            <div>
+              <img>
+              <p>Genomics</p>
+            </div>
+
+            <div>
+              <img>
+              <p>Metagenomics</p>
+            </div>
+
+            <div>
+              <img>
+              <p>bulk RNA-Seq</p>
+            </div>
+
+            <div>
+              <img>
+              <p>single-cell RNA-Seq</p>
+            </div>
+
+          </div>
+
+        -->
+
+          <hr>
+
+          <h3>Front-end development</h3>
+
+          <div id="front-end" class="skill-section">
+
+            <div>
+              <img src="./img/HTML5_Badge.svg.png">
+              <p>HTML</p>
+            </div>
+
+            <div>
+              <img src="./img/CSS3_logo.svg">
+              <p>CSS</p>
+            </div>
+
+            <div>
+              <img src="./img/Bootstrap_logo.svg.png">
+              <p>Bootstrap</p>
+            </div>
+
+
+          </div>
+
+          <hr>
+
+          <h3>Other technologies</h3>
+
+          <div id="other-technologies" class="skill-section">
+
+            <div>
+              <img src="./img/6698688.png">
+              <p>Docker</p>
+            </div>
+  
+            <div>
+              <img src="./img/github.svg">
+              <p>Version control</p>
+            </div>
+
+          </div>
+
+        <div>
+          
+        </div>
+
+      </div>
 
       
     </section>
@@ -209,7 +397,9 @@
           <br>
           <div class="open-on-github">
 
-            <p>Open on GitHub</p>
+            <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank" >
+              <p>Open on GitHub</p>
+            </a>
 
             <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank">
               <img src="./img/github.svg" height="25px">
@@ -238,7 +428,9 @@
               <br>
               <div class="open-on-github">
 
-                <p>Open on GitHub</p>
+                <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank" >
+                  <p>Open on GitHub</p>
+                </a>
 
                 <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank">
                   <img src="./img/github.svg" height="25px">
@@ -267,8 +459,10 @@
               <br>
               <div class="open-on-github">
     
-                <p>Open on GitHub</p>
-    
+                <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank" >
+                  <p>Open on GitHub</p>
+                </a>
+
                 <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank">
                   <img src="./img/github.svg" height="25px">
                 </a>
@@ -297,8 +491,10 @@
               <br>
               <div class="open-on-github">
     
-                <p>Open on GitHub</p>
-    
+                <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank" >
+                  <p>Open on GitHub</p>
+                </a>
+
                 <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank">
                   <img src="./img/github.svg" height="25px">
                 </a>
@@ -315,6 +511,27 @@
     </section>
 
     <section id="Contact">
+
+      <div class="container contact-background">
+
+        <hr>
+
+        <h2 id="contact-title">Contact me</h2>
+
+        <div class="contact-grid">
+
+          <div class="contact">
+            <img src="./img/email.png"> <a>tiburskeleandro@gmail.com</a>
+          </div>
+          <div class="contact">
+            <img src="./img/linkedin.svg"> <a href="https://www.linkedin.com/in/leandro-tiburske-a323b61b2/" target="_blank">LinkedIn</a>
+          </div>
+          <div class="contact">
+            <img src="./img/github.svg""> <a href="https://github.com/leandrotiburske" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+      </div>
 
       
     </section>
