@@ -7,11 +7,11 @@
 .nav-link {
     color: white;
     font-family: "Inter";
-    padding-left: 4cap;
     font-weight: bold;
     letter-spacing: 0.05rem;
     --bs-nav-link-hover-color: #DB9F58;
 }
+
 
 .social-media {
     position: fixed;
@@ -79,19 +79,17 @@ h1 {
     margin-bottom: 2rem;
     letter-spacing: 0.05rem;
     color: #1c59c2;
-    margin-bottom: 3rem;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
-h3 {
+
+#about-text-container > p {
     font-family: "Inter";
     font-weight:normal;
-    margin-bottom: 2rem;
-    letter-spacing: 0.05rem;
-    line-height: 2.7rem;
+    font-size: 20px;
 }
 
-h3 > span {
+#about-text-container > p > span {
     font-weight: bold;
     color: #DB9F58;
 }
@@ -101,9 +99,119 @@ h3 > span {
     border-radius: 8%;
     float: right;
     margin-left: 2cap;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
+
+/* Experience */
+
+.experience-background {
+    width: 65%;
+    clear: right;
+}
+
+.timeline-with-icons {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+}
+  
+.timeline-with-icons .timeline-item {
+    position: relative;
+}
+  
+.timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+  
+.timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: hsl(217, 88.2%, 90%);
+    color: hsl(217, 88.8%, 35.1%);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role {
+    margin-bottom: 20px;
+}
+
+.timeline-icon svg {
+    height: 25px;
+}
+
+
+
+
+/*  Portfolio  */
+
+#portfolio-title {    
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05rem;
+    color: #1c59c2;
+    margin-bottom: 3rem;
+    margin-top: 100px;
+
+}
+
+.portfolio-background {
+    width: 65%;
+    clear: right;
+}
+
+
+.grid-portfolio {
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .grid-portfolio {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.repo {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.repo > img {
+    height: 30vh;
+}
+
+.grid-portfolio > a {
+    text-decoration: none;
+    color: black;
+}
+
+.technologies-portfolio {
+    display: flex;
+    gap: 20px;
+    height: 25px;
+    margin-top: 1.7cap;
+    margin-bottom: 1.7cap;
+}
+
+.open-on-github {
+    display: flex;
+    gap: 10px;
+}
 
 /*  Footer  */
 
