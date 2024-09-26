@@ -75,7 +75,7 @@ body {
 }
 
 
-@media (max-width:750px) {
+@media (max-width:850px) {
 
   .social-media {
     margin-right: auto;
@@ -171,7 +171,7 @@ h1 {
   text-align: center;
   font-family: "Inter";
   font-weight: bolder;
-  font-size: 5rem;
+  font-size: 8vh;
   letter-spacing: 0.25rem;
   margin-bottom: 2rem;
 }
@@ -214,7 +214,7 @@ h1 {
   height: 35vh;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 900px) {
 
   #about-text-container {
     display: flex;
@@ -352,7 +352,7 @@ h5>a {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 775px) {
 
   #programming-languages {
     grid-template-columns: 1fr 1fr;
