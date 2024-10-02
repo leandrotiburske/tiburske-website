@@ -349,10 +349,10 @@ h5>a {
 }
 
 #other-technologies {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (max-width: 775px) {
+@media (max-width: 800px) {
 
   #programming-languages {
     grid-template-columns: 1fr 1fr;
@@ -405,22 +405,25 @@ h5>a {
   gap: 50px;
 }
 
-@media (max-width: 768px) {
-
-  .grid-portfolio {
-    grid-template-columns: 1fr;
-  }
-
-}
-
 .repo {
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .repo>img {
   width: 25vw;
+  height: 20vh;
+  object-fit: scale-down;
+  object-position: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.repo>h3 {
+  margin-top: 1cap;
 }
 
 .open-on-github>a {
@@ -430,15 +433,26 @@ h5>a {
 
 .technologies-portfolio {
   display: flex;
-  gap: 20px;
-  height: 25px;
   margin-top: 1.7cap;
   margin-bottom: 1.7cap;
+  gap: 20px;
+}
+
+.technologies-portfolio > img {
+  height: 25px;
 }
 
 .open-on-github {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 1000px) {
+
+  .grid-portfolio {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 /*  Contact  */
