@@ -5,16 +5,16 @@
 }
 
 p {
-  font-family: "Inter";
+  font-family: "Ubuntu";
 }
 
 a {
-  font-family: "Inter";
+  font-family: "Ubuntu";
 }
 
 body {
   margin: 0px;
-  font-family: 'Inter';
+  font-family: "Ubuntu";
 }
 
 .nav {
@@ -32,7 +32,7 @@ body {
 
 .nav>.nav-header>.nav-title {
   display: inline-block;
-  font-family: 'Inter';
+  font-family: "Ubuntu";
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
@@ -169,8 +169,7 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Inter";
-  font-weight: bolder;
+  font-family:"Ubuntu";
   font-size: 8vh;
   letter-spacing: 0.25rem;
   margin-bottom: 2rem;
@@ -183,7 +182,7 @@ h1 {
 }
 
 #about-title {
-  font-family: "Inter";
+  font-family: "Ubuntu";
   font-weight: bolder;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -195,7 +194,7 @@ h1 {
 
 
 #about-text-container>p {
-  font-family: "Inter";
+  font-family: "Ubuntu";
   font-weight: normal;
   font-size: 20px;
 }
@@ -289,6 +288,10 @@ h5>a {
   font-weight: bold;
 }
 
+.text-muted > span {
+  font-style: italic;
+}
+
 
 
 /*  Skills  */
@@ -298,7 +301,7 @@ h5>a {
 }
 
 #skills-title {
-  font-family: "Inter";
+  font-family: "Ubuntu";
   font-weight: bolder;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -333,6 +336,8 @@ h5>a {
   margin-bottom: 10px;
 }
 
+
+
 .skill-section>div {
   display: flex;
   flex-direction: column;
@@ -349,7 +354,7 @@ h5>a {
 }
 
 #other-technologies {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media (max-width: 800px) {
@@ -381,7 +386,7 @@ h5>a {
 /*  Portfolio  */
 
 #portfolio-title {
-  font-family: "Inter";
+  font-family: "Ubuntu";
   font-weight: bolder;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -463,7 +468,7 @@ h5>a {
 }
 
 #contact-title {
-  font-family: "Inter";
+  font-family: "Ubuntu";
   font-weight: bolder;
   font-size: 2rem;
   margin-bottom: 2rem;
