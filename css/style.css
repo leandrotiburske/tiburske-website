@@ -213,7 +213,7 @@ h1 {
   height: 35vh;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) or (min-height: 1200px) {
 
   #about-text-container {
     display: flex;
@@ -225,7 +225,8 @@ h1 {
   #boat-picture {
     float: none;
     margin-bottom: 50px;
-
+    margin-left: 0cap;
+    height: 30vh;
   }
 
 
@@ -373,10 +374,19 @@ h5>a {
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 560px) {
 
   .skill-section img {
     height: 7vh;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (min-height: 900px) {
+
+  .skill-section img {
+    height: 6vh;
     margin-bottom: 10px;
   }
 
@@ -456,6 +466,10 @@ h5>a {
 
   .grid-portfolio {
     grid-template-columns: 1fr;
+  }
+
+  .repo>img {
+    width: 40vw;
   }
 
 }
