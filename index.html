@@ -1,555 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leandro Tiburske</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/dna.css" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leandro Tiburske's portfolio: Software & Data Engineer experienced in Python, React, and Apache Airflow.">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>Leandro Tiburske — Software & Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css?v=4">
+  <script src="./js/script.js?v=4" defer></script>
 </head>
 <body>
-    
-    
-    <section id="header" class="fixed-top">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-      <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        
-        <div class="nav-links">
-          <a href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#Experience">Experience</a>
-          <a href="#Education">Education</a>
-          <a href="#Skills">Skills</a>
-          <a href="#Portfolio">Portfolio</a>
-          <a href="#Contact">Contact</a>
-        </div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to homepage" data-i18n-aria="homeLabel">
+      <span class="brand-mark">LT</span>
+      <span>Leandro Tiburske</span>
+    </a>
 
-        <div class="nav-bar d-flex social-media">
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
+      <span></span><span></span>
+      <span class="sr-only" data-i18n="menu">Open menu</span>
+    </button>
 
-          <a href="https://github.com/leandrotiburske" target="_blank"><img src="./img/github.svg" height="30" id="github"></a>
-          <a href="https://www.linkedin.com/in/leandro-tiburske-a323b61b2/" target="_blank"><img src="./img/linkedin.svg" height="30" id="linkedin"></a>
-  
+    <nav id="navigation" aria-label="Main navigation" data-i18n-aria="navLabel">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#experience" data-i18n="navExperience">Experience</a>
+      <a href="#education" data-i18n="navEducation">Education</a>
+      <a class="nav-cta" href="#contact" data-i18n="navContact">Let's talk</a>
+      <button class="language-toggle" type="button" aria-label="Mudar idioma para português">
+        <span class="language-code">PT</span>
+        <span class="language-name">Português</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Software & Data Engineer</p>
+        <h1 data-i18n="heroTitle">Hi, I'm <br> <em>Leandro Tiburske</em></h1>
+        <p class="hero-text" data-i18n="heroText">I build end-to-end products: robust Python APIs, data pipelines with Airflow and React experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact"><span data-i18n="talkButton">Talk to me</span> <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="https://github.com/leandrotiburske" target="_blank" rel="noreferrer"><span data-i18n="githubButton">View GitHub</span> <span aria-hidden="true">↗</span></a>
         </div>
-
       </div>
 
+      <div class="hero-visual reveal" aria-label="A representation of Leandro's areas of expertise" data-i18n-aria="visualLabel">
+        <div class="portrait-card">
+          <img src="./img/78895.jpeg" alt="Leandro Tiburske">
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">scroll <span></span></div>
     </section>
 
-
-    <section id="Home">
-
-        <div id="home-background" class="container-fluid">
-            <img src="./img/coding-background-9izlympnd0ovmpli.jpg" id="computer-background">
-            <img src="./img/IMG_2778.jpeg" id="profile-pic">
+    <section class="section intro" id="about">
+      <div class="section-label reveal"><span>01</span> <span data-i18n="aboutLabel">About</span></div>
+      <div class="intro-content reveal">
+        <h2 data-i18n="aboutTitle">I build software from <span>end to end.</span></h2>
+        <div class="intro-grid">
+          <p data-i18n="aboutOne">I'm Leandro, a software engineer working across backend, frontend, and data engineering. I like to understand the whole problem and build solutions that are simple to operate, easy to evolve, and pleasant to use.</p>
+          <p data-i18n="aboutTwo">My perspective is end-to-end: from data modeling and automation to the API and the interface people interact with. Clean code, direct communication, and decisions grounded in context are all part of the process.</p>
         </div>
-
-        <div id="home-bottom" class="container-fluid">
-            <h1>Leandro Tiburske</h1>
-            <div class="wrapper">
-                <div class="loader">
-                  <div class="wave top-wave">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                  <div class="wave bottom-wave">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-        </div>
-
+      </div>
     </section>
 
-    <section id="About">
-
-      <div class="container about-background">
-
-        <hr>
-
-        <h2 id="about-title">About</h2>
-
-        <div id="about-text-container">
-
-          <img src="./img/78895.jpeg" height="400" id="boat-picture">
-
-          <p>I am a <span>Bioinformatician</span> proficient in <span>Python, R and Bash</span> programming with hands-on experience 
-          in pipeline orchestration with <span>Nextflow</span>, high-performance computing (<span>HPC</span>) and development of Next-Generation Sequencing (<span>NGS</span>)
-        data analysis pipelines. A curious, logical, and organised professional, I am proactive, quick to learn, and adept at <span>problem-solving</span>. 
-          </p>
-          <p>I am dedicated to using data to uncover valuable insights that push biological research and innovation forward!</p>
-    
-        </div>
-
+    <section class="section expertise" id="stack">
+      <div class="section-label reveal"><span>02</span> <span data-i18n="expertiseLabel">Expertise</span></div>
+      <div class="expertise-heading reveal">
+        <h2 data-i18n="expertiseTitle">From infrastructure<br>to experience.</h2>
+        <p data-i18n="expertiseIntro">Three areas that come together to deliver complete products.</p>
       </div>
 
-    </section>    
+      <div class="cards">
+        <article class="expertise-card reveal">
+          <div class="card-top"><span>01</span><span class="card-icon">{ }</span></div>
+          <h3>Backend</h3>
+          <p data-i18n="backendText">Python services and APIs built for clarity, security, performance, and maintainability.</p>
+          <ul>
+            <li>Python</li><li>FastAPI</li><li>REST APIs</li><li>SQL</li><li>SQLAlchemy</li><li>Pydantic</li><li>PostgreSQL</li><li>RabbitMQ</li><li>Celery</li>
+          </ul>
+        </article>
 
-    <section id="Experience" style="clear: right;">
+        <article class="expertise-card card-green reveal">
+          <div class="card-top"><span>02</span><span class="card-icon">↳</span></div>
+          <h3>Data Engineering</h3>
+          <p data-i18n="dataText">Orchestrated, observable pipelines that deliver reliable data to decision-makers.</p>
+          <ul>
+            <li>Airflow</li><li>AWS</li><li>Terraform</li><li>Docker</li><li>Kubernetes</li><li>Grafana</li><li>Bash</li><li>Linux</li><li>Git</li>
+          </ul>
+        </article>
 
-      <div class="container experience-background">
-
-        <hr>
-  
-        <h2 id="portfolio-title">Experience</h2>
-      
-            <section class="py-5">
-              <ul class="timeline-with-icons">
-                <li class="timeline-item mb-5">
-                  <span class="timeline-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="black" class="bi bi-cpu-fill" viewBox="0 0 16 16">
-                      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
-                      <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5"/>
-                    </svg>                  
-                  </span>
-                
-                  <h5 class="role fw-bold"><span>Bioinformatics Analyst</span> - <a target="_blank" href="https://biotrop.com/">BIOTROP</a></h5>
-                  <p class="text-muted mb-2 fw-bold">April 2024 - Present</p>
-                  <p class="text-muted">
-                    Responsible for analysing metagenomics sequencing data to produce reports that facilitate data-driven sales of biological inputs, 
-                    as well as improving and developing NGS data analysis pipelines. 
-                  </p>
-                </li>
-              
-                <li class="timeline-item mb-5">
-                
-                  <span class="timeline-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="black" class="bi bi-cpu-fill" viewBox="0 0 16 16">
-                      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
-                      <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5"/>
-                    </svg>                        </span>
-                  <h5 class="role fw-bold"><span>Research Intern</span> - <a target="_blank" href="https://liu.se/en">Linköping University</a></h5>
-                  <p class="text-muted mb-2 fw-bold">August 2023 - November 2023</p>
-                  <p class="text-muted">
-                    Orchestrated a Bash pipeline on a HPC to preprocess and analyse raw metagenomics data. 
-                    Assisted in organising and preparing samples for sequencing in partnership with SciLifeLab, the Swedish Institute of biological high-throughput data.
-                  </p>
-                </li>
-              
-                <li class="timeline-item mb-5">
-                
-                  <span class="timeline-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="black" class="bi bi-cpu-fill" viewBox="0 0 16 16">
-                      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
-                      <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5"/>
-                    </svg>                        </span>
-                  <h5 class="role fw-bold"> <span>Undergraduate Researcher</span> - <a target="_blank" href="https://www.einstein.br/en/Pages/Home.aspx">Albert Einstein Education and Research Center</a></h5>
-                  <p class="text-muted mb-2 fw-bold">September 2022 - March 2024</p>
-                  <p class="text-muted">
-                    Conducted a comprehensive analysis of single-nuclei and bulk RNA-Seq data from brain samples of individuals with bipolar disorder. 
-                    Identified a potential role for the genes <span>CHI3L1</span> and <span>SERPINA3</span> in the neuroinflammatory and neurodegenerative processes associated with bipolar disorder.
-                  </p>
-                </li>
-            
-
+        <article class="expertise-card card-dark reveal">
+          <div class="card-top"><span>03</span><span class="card-icon">◫</span></div>
+          <h3>Frontend</h3>
+          <p data-i18n="frontendText">Responsive React interfaces that make complex workflows simple and intuitive.</p>
+          <ul>
+            <li>React</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+          </ul>
+        </article>
       </div>
-        
-              </section>
-
-
     </section>
 
-    <section id="Education">
-
-      <div class="container experience-background">
-
-        <hr>
-  
-        <h2 id="portfolio-title">Education</h2>
-      
-            <section class="py-5">
-              <ul class="timeline-with-icons">
-                <li class="timeline-item mb-5">
-                  <span class="timeline-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 0c17.7 0 32 14.3 32 32c0 59.8-30.3 107.5-69.4 146.6c-28 28-62.5 53.5-97.3 77.4l-2.5 1.7c-11.9 8.1-23.8 16.1-35.5 23.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0l-1.6 1c-6 4-11.9 7.9-17.8 11.9c-20.9 14-40.8 27.7-59.3 41.5l118.5 0c-9.8-7.4-20.1-14.7-30.7-22.1l7-4.7 3-2c15.1-10.1 30.9-20.6 46.7-31.6c25 18.1 48.9 37.3 69.4 57.7C417.7 372.5 448 420.2 448 480c0 17.7-14.3 32-32 32s-32-14.3-32-32L64 480c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-59.8 30.3-107.5 69.4-146.6c28-28 62.5-53.5 97.3-77.4c-34.8-23.9-69.3-49.3-97.3-77.4C30.3 139.5 0 91.8 0 32C0 14.3 14.3 0 32 0S64 14.3 64 32l320 0c0-17.7 14.3-32 32-32zM338.6 384l-229.2 0c-10.1 10.6-18.6 21.3-25.5 32l280.2 0c-6.8-10.7-15.3-21.4-25.5-32zM109.4 128l229.2 0c10.1-10.7 18.6-21.3 25.5-32L83.9 96c6.8 10.7 15.3 21.3 25.5 32zm55.4 48c18.4 13.8 38.4 27.5 59.3 41.5c20.9-14 40.8-27.7 59.3-41.5l-118.5 0z"/></svg>
-                  </span>
-                
-                  <h5 class="role fw-bold">MBA in <span> Software Engineering</span> - University of São Paulo</h5>
-                  <p class="text-muted mb-2 fw-bold">October 2024 - Present</p>
-                  <p class="text-muted">
-                    Focus on software development, DevOps, cloud computing, and infrastructure as code. 
-                    Covers agile methodologies, UX, data engineering, machine learning, big data, blockchain, and API management, while developing leadership and emotional intelligence skills.
-                  </p>
-                </li>
-              
-                <li class="timeline-item mb-5">
-                
-                  <span class="timeline-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 0c17.7 0 32 14.3 32 32c0 59.8-30.3 107.5-69.4 146.6c-28 28-62.5 53.5-97.3 77.4l-2.5 1.7c-11.9 8.1-23.8 16.1-35.5 23.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0l-1.6 1c-6 4-11.9 7.9-17.8 11.9c-20.9 14-40.8 27.7-59.3 41.5l118.5 0c-9.8-7.4-20.1-14.7-30.7-22.1l7-4.7 3-2c15.1-10.1 30.9-20.6 46.7-31.6c25 18.1 48.9 37.3 69.4 57.7C417.7 372.5 448 420.2 448 480c0 17.7-14.3 32-32 32s-32-14.3-32-32L64 480c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-59.8 30.3-107.5 69.4-146.6c28-28 62.5-53.5 97.3-77.4c-34.8-23.9-69.3-49.3-97.3-77.4C30.3 139.5 0 91.8 0 32C0 14.3 14.3 0 32 0S64 14.3 64 32l320 0c0-17.7 14.3-32 32-32zM338.6 384l-229.2 0c-10.1 10.6-18.6 21.3-25.5 32l280.2 0c-6.8-10.7-15.3-21.4-25.5-32zM109.4 128l229.2 0c10.1-10.7 18.6-21.3 25.5-32L83.9 96c6.8 10.7 15.3 21.3 25.5 32zm55.4 48c18.4 13.8 38.4 27.5 59.3 41.5c20.9-14 40.8-27.7 59.3-41.5l-118.5 0z"/></svg>
-                  </span>
-                  <h5 class="role fw-bold">BSc in <span>Biomedical Sciences</span> - University of São Paulo</h5>
-                  <p class="text-muted mb-2 fw-bold">January 2020 - March 2024</p>
-                  <p class="text-muted">
-                    Attended classes at both undergraduate and graduate levels:<br>
-                    <span>Differential and Integral Calculus (Mathematics Undergraduate Program), 
-                    Systems Biology (Bioinformatics Graduate Program), 
-                    Microbiome Data analysis (Pharmaceutical Sciences Graduate Program),
-                    Concepts of Programming Languages (Computer Science Graduate Program).
-                  </span>
-                  </p>
-                  
-                </li>
-              
-
-            
-
+    <section class="section projects-section" id="projects">
+      <div class="section-label reveal"><span>03</span> <span data-i18n="projectsLabel">Selected projects</span></div>
+      <div class="projects-heading reveal">
+        <h2 data-i18n="projectsTitle">Systems built<br>from end to end.</h2>
+        <p data-i18n="projectsIntro">Projects where product thinking, infrastructure, and implementation meet.</p>
       </div>
-        
-              </section>
 
-      
+      <div class="project-grid">
+        <article class="project-card project-blue reveal">
+          <div class="project-top"><span>01 / DATA PLATFORM</span><span>↗</span></div>
+          <div class="project-diagram" aria-hidden="true"><span>Airflow</span><i>→</i><span>S3</span><i>→</i><span>Athena</span></div>
+          <div class="project-copy">
+            <h3>AI Monitoring</h3>
+            <p data-i18n="aiProjectText">A cloud-native platform for monitoring AI models, GPU pricing, and industry intelligence, with infrastructure provisioned as code.</p>
+            <p class="stack-label" data-i18n="stackLabel">Tech stack</p>
+            <ul><li>Airflow</li><li>AWS</li><li>Terraform</li><li>GitHub Actions</li></ul>
+            <a href="https://github.com/leandrotiburske/ai-monitoring" target="_blank" rel="noreferrer"><span data-i18n="viewProject">View project</span> <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-green reveal">
+          <div class="project-top"><span>02 / FULL STACK</span><span>↗</span></div>
+          <div class="project-diagram project-diagram-long" aria-hidden="true"><span>React</span><i>→</i><span>FastAPI</span><i>→</i><span>RabbitMQ</span><i>→</i><span>Celery</span></div>
+          <div class="project-copy">
+            <h3>Variant Platform</h3>
+            <p data-i18n="variantProjectText">A distributed full-stack platform with a React interface and FastAPI services, using RabbitMQ as the message broker and Celery workers for asynchronous processing.</p>
+            <p class="stack-label" data-i18n="stackLabel">Tech stack</p>
+            <ul><li>React</li><li>FastAPI</li><li>PostgreSQL</li><li>RabbitMQ</li><li>Celery</li></ul>
+            <div class="project-links">
+              <a href="https://github.com/leandrotiburske/variant_platform" target="_blank" rel="noreferrer"><span data-i18n="viewPlatform">Platform</span> <span>↗</span></a>
+              <a href="https://github.com/leandrotiburske/fastq_engine" target="_blank" rel="noreferrer"><span data-i18n="viewEngine">Processing engine</span> <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="Skills">
-
-      <div class="container skills-background">
-
-        <hr>
-
-        <h2 id="skills-title">Skills</h2>
-
-        <div class="container skills-list">
-
-          <hr>
-
-          <h3>Programming languages</h3>
-
-          <div id="programming-languages" class="skill-section">
-
-            <div>
-              <img src="./img/Python-logo-notext.svg.png">
-              <p>Python</p>
-            </div>
-
-            <div>
-              <img src="./img/R_logo.svg.png">
-              <p>R</p>
-            </div>
-
-            <div>
-              <img src="./img/Bash_Logo_black_and_white_icon_only.svg.png">
-              <p>Bash</p>
-            </div>
-
-            <div>
-              <img src="./img/rust.png">
-              <p>Rust</p>
-            </div>
-
-          </div>
-
-          <hr>
-
-          <h3>Workflow orchestration</h3>
-
-          <div id="pipeline-orchestration" class="skill-section">
-            
-            <div>
-              <img src="./img/nflogo.png">
-              <p>Nextflow</p>
-            </div>
-
-          </div>
-
-          <hr>
-
-          <h3>Front-end development</h3>
-
-          <div id="front-end" class="skill-section">
-
-            <div>
-              <img src="./img/HTML5_Badge.svg.png">
-              <p>HTML</p>
-            </div>
-
-            <div>
-              <img src="./img/CSS3_logo.svg">
-              <p>CSS</p>
-            </div>
-
-            <div>
-              <img src="./img/Bootstrap_logo.svg.png">
-              <p>Bootstrap</p>
-            </div>
-
-
-          </div>
-
-          <hr>
-
-          <h3>Other technologies</h3>
-
-          <div id="other-technologies" class="skill-section">
-
-            <div>
-              <img src="./img/dna-icon.svg">
-              <p>NGS data analysis</p>
-            </div>
-
-            <div>
-              <img src="./img/6698688.png">
-              <p>Docker</p>
-            </div>
-  
-            <div>
-              <img src="./img/github.svg">
-              <p>Version control</p>
-            </div>
-
-            <div>
-              <img src="./img/azure.png">
-              <p>Azure</p>
-            </div>
-
-          </div>
-
-        <div>
-          
-        </div>
-
+    <section class="section experience-section" id="experience">
+      <div class="section-label reveal"><span>04</span> <span data-i18n="experienceLabel">Experience</span></div>
+      <div class="experience-heading reveal">
+        <h2 data-i18n="experienceTitle">Some of<br><span>my experience</span></h2>
+        <p data-i18n="experienceIntro">Building software, automation, and data systems across international teams.</p>
       </div>
 
-      
-    </section>
-
-    <section id="Portfolio">
-
-      <div class="container portfolio-background">
-
-      <hr>
-
-      <h2 id="portfolio-title">Portfolio</h2>
-
-      <div class= "grid-portfolio container">
-
-        <div class="container repo">
-
-          <img src="./img/dag-20240924-33469667.png">
-
-          <h3>scMultiAnnotator</h3>
-
-          <div class="container technologies-portfolio">
-
-            <img src="./img/Python-logo-notext.svg.png" title="Python">
-            <img src="./img/Bash_Logo_black_and_white_icon_only.svg.png" title="Bash">
-            <img src="./img/nflogo.png" title="Nextflow">
-            <img src="./img/6698688.png" title="Docker">
-
-          </div>
-
-          <p>scMultiAnnotator facilitates single-cell annotation according to its gold standards. This Nextflow-orchestrated pipeline implements three annotation algorithms, each using a different approach.</p>
-
-          <br>
-          <div class="open-on-github">
-
-            <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank" >
-              <p>Open on GitHub</p>
-            </a>
-
-            <a href="https://github.com/leandrotiburske/scMultiAnnotator" target="_blank">
-              <img src="./img/github.svg" height="25px">
-            </a>
-
-          </div>
-        </div>
-
-        <div class="container repo">
-
-          <img src="./img/network.png">
-
-          <h3>bionet-rs</h3>
-
-          <div class="container technologies-portfolio">
-
-            <img src="./img/rust.png" title="Rust">
-
-          </div>
-
-          <p>Rust implementation of gene coexpression networks for efficient and fast analysis, leveraging low-level programming and multi-threading techniques to maximise performance.</p>
-
-          <br>
-          <div class="open-on-github">
-
-            <a href="https://github.com/leandrotiburske/bionet-rs" target="_blank" >
-              <p>Open on GitHub</p>
-            </a>
-
-            <a href="https://github.com/leandrotiburske/bionet-rs" target="_blank">
-              <img src="./img/github.svg" height="25px">
-            </a>
-
-          </div>
-        </div>
-
-            <div class="repo">
-
-              <img src="./img/umap.jpeg">
-
-              <h3>Transcriptomics of Bipolar Disorder</h3>
-
-              <div class="technologies-portfolio">
-
-                <img src="./img/R_logo.svg.png" title="R">
-                <img src="./img/Bash_Logo_black_and_white_icon_only.svg.png" title="Bash">
-
-              </div>
-
-              <p>For my Bachelor's thesis, bulk and single-cell RNA sequencing analyses were conducted on brain samples obtained from both control and bipolar individuals. The project encompassed the entire process, from the initial processing of raw data through to the examination of differential expression, coexpression patterns, and cell-cell communication.</p>
-
-              <br>
-              <div class="open-on-github">
-
-                <a href="https://github.com/leandrotiburske/BipolarDisorder/" target="_blank" >
-                  <p>Open on GitHub</p>
-                </a>
-
-                <a href="https://github.com/leandrotiburske/BipolarDisorder/" target="_blank">
-                  <img src="./img/github.svg" height="25px">
-                </a>
-
-              </div>
-            </div>
-
-            <div class="repo">
-
-              <img src="./img/linkoping-uneversity-.png">
-    
-              <h3>Metagenomics and Gut-Brain Axis</h3>
-    
-              <div class="technologies-portfolio">
-    
-                <img src="./img/Bash_Logo_black_and_white_icon_only.svg.png" title="Bash">
-    
-              </div>
-    
-              <p>Developed during my research internship at Linköping University in Sweden, the aim of this project was to perform metagenomic sequencing on mouse samples to understand the impact of a high-fat diet on cognition, behaviour, and microbiota. The analysis was conducted on a high-performance computing system (HPC) managed with Slurm.</p>
-    
-              <br>
-              <div class="open-on-github">
-    
-                <a href="https://github.com/leandrotiburske/metagenomics_HFD/" target="_blank" >
-                  <p>Open on GitHub</p>
-                </a>
-
-                <a href="https://github.com/leandrotiburske/metagenomics_HFD/" target="_blank">
-                  <img src="./img/github.svg" height="25px">
-                </a>
-    
-              </div>
-            </div>    
-
-
-            <div class="repo">
-
-              <img src="./img/coding.svg">
-    
-              <h3>This website</h3>
-    
-              <div class="technologies-portfolio">
-    
-                <img src="./img/HTML5_Badge.svg.png" title="HTML">
-                <img src="./img/CSS3_logo.svg" title="CSS">
-
-                
-              </div>
-    
-              <p>Built with HTML and CSS and hosted on GitHub Pages, this site allows me to practice my front-end skills while sharing my professional background.</p>
-    
-              <br>
-              <div class="open-on-github">
-    
-                <a href="https://github.com/leandrotiburske/tiburske-website" target="_blank" >
-                  <p>Open on GitHub</p>
-                </a>
-
-                <a href="https://github.com/leandrotiburske/tiburske-website" target="_blank">
-                  <img src="./img/github.svg" height="25px">
-                </a>
-    
-              </div>
-            </div>    
-
-
-      </div>
-
-      </div>
-
-      
-    </section>
-
-    <section id="Contact">
-
-      <div class="container contact-background">
-
-        <hr>
-
-        <h2 id="contact-title">Contact me</h2>
-
-        <div class="contact-grid">
-
-          <div id="email-info" class="contact">
-            <img src="./img/email.png"> <a>tiburskeleandro@gmail.com</a>
-          </div>
-          <div class="contact">
-            <img src="./img/linkedin_blue.png"> <a href="https://www.linkedin.com/in/leandro-tiburske-a323b61b2/" target="_blank">LinkedIn</a>
-          </div>
-          <div class="contact">
-            <img src="./img/github.svg""> <a href="https://github.com/leandrotiburske" target="_blank">GitHub</a>
-          </div>
-        </div>
-
-      </div>
-
-      
-    </section>
-
-    <section id="footer">
-
-        <div class="container footer-background">
-            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
-              <div class="d-flex align-items-center">
-                <span class="mb-3 mb-md-0 mr-0 text-body-secondary">© 2024 Leandro Tiburske</span>
-              </div>
-          
+      <div class="experience-list">
+        <article class="experience-item reveal">
+          <div class="experience-meta"><span>2025 — 2026</span><span data-i18n="italyLocation">Milan, Italy</span></div>
+          <div class="experience-body">
+            <p class="company">Human Technopole</p>
+            <h3 data-i18n="htRole">Bioinformatician (Software & Data Engineering)</h3>
+            <ul>
+              <li data-i18n="htOne">Automated HPC workloads processing tens of terabytes with Airflow, replacing weeks of recurring manual work.</li>
+              <li data-i18n="htTwo">Built Python, PostgreSQL, and Grafana systems for compute metrics.</li>
+              <li data-i18n="htThree">Reduced a compute-intensive pipeline's execution time by approximately 75% through GPU acceleration.</li>
+              <li data-i18n="htFour">Migrated spreadsheet-based operational workflows to a full-stack Python (NiceGUI) and PostgreSQL application, supporting production invoicing.</li>
+              <li data-i18n="htFive">Maintained the development of a data processing pipeline on GitHub, overseeing PRs, code reviews, and release cycles.</li>
+              <li data-i18n="htSix">Collaborated within an international and multidisciplinary team, using English as the primary working language.</li>
             </ul>
-            </footer>
           </div>
+        </article>
 
+        <article class="experience-item reveal">
+          <div class="experience-meta"><span>2024 — 2025</span><span data-i18n="brazilLocation">São Paulo, Brazil</span></div>
+          <div class="experience-body">
+            <p class="company">BIOTROP</p>
+            <h3 data-i18n="biotropRole">Data Engineering & Automation</h3>
+            <ul>
+              <li data-i18n="biotropOne">Optimized large-scale Python workloads through parallelization, reducing execution time by more than 60%.</li>
+              <li data-i18n="biotropTwo">Configured Slurm on the company's HPC cluster to automate job scheduling and improve resource allocation.</li>
+              <li data-i18n="biotropThree">Presented data analysis results to clients through reports and meetings, explaining technical findings to non-specialist audiences.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-item reveal">
+          <div class="experience-meta"><span>2023</span><span data-i18n="swedenLocation">Linköping, Sweden</span></div>
+          <div class="experience-body">
+            <p class="company">Linköping University</p>
+            <h3 data-i18n="liuRole">Engineering Intern</h3>
+            <ul><li data-i18n="liuOne">Developed and automated large-scale data processing pipelines with R and Bash, including scheduling for HPC environments.</li></ul>
+          </div>
+        </article>
+      </div>
     </section>
 
+    <section class="section education-section" id="education">
+      <div class="section-label reveal"><span>05</span> <span data-i18n="educationLabel">Education</span></div>
+      <div class="education-heading reveal">
+        <h2 data-i18n="educationTitle"><span>My education</span></h2>
+        <p data-i18n="educationIntro">A multidisciplinary foundation connecting software engineering, data, and science.</p>
+      </div>
+
+      <div class="education-grid">
+        <article class="education-card reveal">
+          <div class="education-year">2024 — 2026</div>
+          <p>University of São Paulo · USP</p>
+          <h3 data-i18n="mbaTitle">MBA in Software Engineering</h3>
+          <p data-i18n="mbaText">Focused on software engineering, with a capstone project developing a distributed platform for complex data processing.</p>
+        </article>
+        <article class="education-card education-card-blue reveal">
+          <div class="education-year">2020 — 2024</div>
+          <p>University of São Paulo · USP</p>
+          <h3 data-i18n="bachelorTitle">Bachelor's in Biomedical Sciences</h3>
+          <p data-i18n="bachelorText">A scientific foundation with emphasis on computational biology, data analysis, and bioinformatics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <p class="eyebrow reveal"><span></span> <span data-i18n="available">Open to new connections</span></p>
+      <h2 class="reveal" data-i18n="contactTitle">Let's stay in touch.</h2>
+      <p class="contact-text reveal" data-i18n="contactText">Let's talk about software, products, and opportunities.</p>
+      <div class="contact-actions reveal">
+        <a class="button button-light" href="https://www.linkedin.com/in/leandro-tiburske-a323b61b2/" target="_blank" rel="noreferrer"><span data-i18n="linkedin">Connect on LinkedIn</span> <span>↗</span></a>
+        <a class="button button-outline" href="https://github.com/leandrotiburske" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home"><span class="brand-mark">LT</span><span>Leandro Tiburske</span></a>
+    <p>Software Engineer · Python · React · Airflow</p>
+    <p>© <span id="year"></span></p>
+  </footer>
 </body>
 </html>
